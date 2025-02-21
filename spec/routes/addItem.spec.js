@@ -27,4 +27,5 @@ test('it stores item correctly', async () => {
     expect(db.storeItem.mock.calls[0][0]).toEqual(expectedItem);
     expect(res.send.mock.calls[0].length).toBe(1);
     expect(res.send.mock.calls[0][0]).toEqual(expectedItem);
+    expect(1).toBe(2)
 });
